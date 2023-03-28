@@ -1,71 +1,105 @@
-# Getting Started with Create React App
+<h1 align="center"> Grozny GYM </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**«Grozny Gym»** - это web-сайт для фитнес зала. Позволющее пользователям в онлайн режиме покупать абонемент в зал, выбирать тренера для тренировок, а также покупать спортивное питание прямо в строенном магазине.
 
-## Available Scripts
+<p align="center">
+  <img src="static/gif/home.gif" alt="home" />
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+##  Функционал пользователя приложения:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Регистрация/Авторизация
+- Покупка абонемента
+- Выбор тренера для тренировок
+- Просмотр своего профиля
+- Просмотр остаточного времени абонемента в профиле
+- Просмотр выбранного тренера в профиле
+- Покупка спортивного питания
+- Просмотр и изменение выбранного спортивного питания в корзине
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img src="static/gif/user.gif" alt="user" />
+</p>
 
-### `npm test`
+<p align="center">
+  <img src="static/gif/user2.gif" alt="user" />
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+##  Функционал админа приложения:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Добавление, удаление из базы данных:
+  * абонемента
+  * тренера
+  * спортивного питания
+- Просмотр пользователей, купивших абонемент
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img src="static/gif/admin.gif" alt="admin" />
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Мои задачи: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [x] функция живого поиска,
+- [x] работал над авторизацией и регистрацией как на бэкенде, так и на фронтенде,
+- [x] занимался версткой
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Для решения поставленных задач, использовал:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js, express, MongoDB, prettier - на сервере
+- React, react-router-dom, react-hooks, redux, redux-thunk, - на клиенте
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Команда проекта
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<h3>
+  <a href="https://github.com/4abaev">
+    <img alt="Rashid" src="https://img.shields.io/badge/-Rasid-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<h3>
+  <a href="https://github.com/WetFlamer">
+    <img alt="Khamid" src="https://img.shields.io/badge/-Khamid-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-### Analyzing the Bundle Size
+<h3>
+  <a href="https://github.com/ADDIC42">
+    <img alt="Adam" src="https://img.shields.io/badge/-Adam-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h3>
+  <a href="https://github.com/zxcviolence">
+    <img alt="Islam" src="https://img.shields.io/badge/-Islam-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-### Making a Progressive Web App
+<h3>
+  <a href="https://github.com/Duzhiev">
+    <img alt="Mohmad" src="https://img.shields.io/badge/-Mohmad-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Запуск проекта
 
-### Deployment
+Для запуска проекта вам необходимо набрать команду в терминале:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```javascript
+npm i
+```
 
-### `npm run build` fails to minify
+После набрать команду:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Gym-front
+```javascript
+npm start
+```
