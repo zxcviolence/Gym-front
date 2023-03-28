@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCoaches } from "../../features/coachSlice";
 import { postForm } from "../../features/coachformSlice";
+import { serverUrl } from "../../serverUrl";
 import styles from "./Coach.module.scss";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -66,7 +67,7 @@ const Coach = () => {
             <div className={styles.coachMain} key={coach._id}>
               <img
                 className={styles.imgCoach}
-                src={`http://localhost:4000/assets/images/coaches/${coach.image}`}
+                src={`${serverUrl}/assets/images/coaches/${coach.image}`}
                 alt="Фотография тренера"
               />
               <div className={styles.secondDiv}>
@@ -154,7 +155,7 @@ const Coach = () => {
               <div className={styles.imgBlock}>
                 <img
                   className={styles.imgCoach}
-                  src={`http://localhost:4000/assets/images/coaches/${coach.image}`}
+                  src={`${serverUrl}/assets/images/coaches/${coach.image}`}
                   alt="Фотография тренера"
                 />
               </div>

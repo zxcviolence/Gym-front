@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getMassage } from "../../features/massageSlice";
 import { postForm } from "../../features/formSlice";
+import { serverUrl } from "../../serverUrl";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -155,7 +156,7 @@ const Massage = () => {
               <div className={styles.cards} key={item._id}>
                 <div className={styles.photo}>
                   <img
-                    src={`assets/images/massage/${item.image}`}
+                    src={`${serverUrl}/assets/images/massage/${item.image}`}
                     alt="massage"
                   />
                 </div>

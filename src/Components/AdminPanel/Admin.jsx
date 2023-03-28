@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "../../features/usersSlice";
 import styles from "./Admin.module.scss";
 import { NavLink } from "react-router-dom";
+import { serverUrl } from "../../serverUrl";
 
 const Admin = () => {
   const users = useSelector((state) => state.users.users);
@@ -30,7 +31,7 @@ const Admin = () => {
           <div>
             <img
               className={styles.avatar}
-              src={`/assets/images/avatars/${users.image}`}
+              src={`${serverUrl}/assets/images/avatars/${users.image}`}
               alt="avatar"
             />
             <span className={styles.role}>{users.login}</span>
@@ -152,7 +153,7 @@ const Admin = () => {
               <span
                 href="/"
                 onClick={() => {
-                  return localStorage.clear(), (window.location.href = "/");
+                  return localStorage.clear() (window.location.href = "/");
                 }}
               >
                 Выход

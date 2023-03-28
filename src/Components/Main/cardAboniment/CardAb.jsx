@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSubscription } from "../../../features/subscriptionSlice";
+import { serverUrl } from "../../../serverUrl";
 import styles from "./cardAB.module.scss";
 
 const CardAb = () => {
@@ -20,7 +21,7 @@ const CardAb = () => {
         return (
           <div key={item._id} className={styles.card_div}>
             <div className={styles.images}>
-              <img src={`/assets/images/subscription/${item.img}`} alt="" />
+              <img src={`${serverUrl}//assets/images/subscription/${item.img}`} alt="" />
             </div>
             <div className={styles.information}>
               <h3>{item.name}</h3>

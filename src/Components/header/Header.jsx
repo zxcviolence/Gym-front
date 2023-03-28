@@ -18,6 +18,7 @@ import {
   InputLabel,
   OutlinedInput,
 } from "@mui/material";
+import { serverUrl } from "../../serverUrl";
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
@@ -188,7 +189,7 @@ const Header = () => {
               <div className={styles.profilebox}>
                 <div className={styles.avatar}>
                   <img
-                    src={`assets/images/avatars/${users.image}`}
+                    src={`${serverUrl}/assets/images/avatars/${users.image}`}
                     alt="тут должен быть аватар"
                   />
                 </div>

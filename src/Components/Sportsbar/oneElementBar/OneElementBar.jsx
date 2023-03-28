@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { fetchGoods } from "../../../features/goodsSlice";
 import { TbDiscount2 } from "react-icons/tb";
+import { serverUrl } from "../../../serverUrl";
 import styles from "./oneEl.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -68,7 +69,7 @@ const OneElementBar = () => {
                 <div className={styles.Goods_block}>
                   <div className={styles.imagage}>
                     <img
-                      src={`/assets/images/sportsNutrition/${goods.image}`}
+                      src={`${serverUrl}/assets/images/sportsNutrition/${goods.image}`}
                       alt=""
                     />
                   </div>
@@ -119,7 +120,7 @@ const OneElementBar = () => {
               <div key={el._id} className={styles.carousel_item}>
                 <div className={styles.carousel_image}>
                   <img
-                    src={`/assets/images/sportsNutrition/${el.image}`}
+                    src={`${serverUrl}/assets/images/sportsNutrition/${el.image}`}
                     alt=""
                   />
                 </div>

@@ -10,6 +10,7 @@ import {
   deleteSimulator,
 } from "../../features/simulatorsSlice";
 import { FiTrash2 } from "react-icons/fi";
+import { serverUrl } from "../../serverUrl";
 
 const Simulators = () => {
   const dispatch = useDispatch();
@@ -57,7 +58,7 @@ const Simulators = () => {
                   <CardMedia
                     component="img"
                     sx={{ height: 230 }}
-                    image={`assets/images/simulators/${item.image}`}
+                    image={`${serverUrl}/assets/images/simulators/${item.image}`}
                     alt="imag"
                   />
                 </div>

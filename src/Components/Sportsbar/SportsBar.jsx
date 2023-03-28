@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import { Button, CardContent, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { separator } from "../helpers/separator";
+import { serverUrl } from "../../serverUrl";
 import RubberBand from "react-reveal/RubberBand";
 
 const SportsBar = () => {
@@ -52,7 +53,7 @@ const SportsBar = () => {
                   <CardMedia
                     component="img"
                     sx={{ height: 230 }}
-                    image={`assets/images/sportsNutrition/${item.image}`}
+                    image={`${serverUrl}/assets/images/sportsNutrition/${item.image}`}
                     alt="imag"
                   />
                 </div>

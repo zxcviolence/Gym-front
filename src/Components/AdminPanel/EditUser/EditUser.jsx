@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editUser } from "../../../features/usersSlice";
+import { serverUrl } from "../../../serverUrl";
 import Admin from "../Admin";
 import styles from "./EditUser.module.scss";
 
@@ -53,7 +54,7 @@ const EditUser = () => {
           <div className={styles.avatarBlock}>
             <img
               className={styles.responsive}
-              src={`/assets/images/avatars/${users.image}`}
+              src={`${serverUrl}/assets/images/avatars/${users.image}`}
               alt="avatar"
             />
             <h6>{users.login}</h6>
@@ -131,7 +132,7 @@ const EditUser = () => {
             <form
               ref={upload}
               id="uploadForm"
-              action={`http://localhost:4000/upload/${users.image}`}
+              action={`${serverUrl}/upload/${users.image}`}
               method="post"
               target="_blank"
               encType="multipart/form-data"
